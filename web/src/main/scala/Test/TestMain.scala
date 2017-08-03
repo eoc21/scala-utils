@@ -8,7 +8,8 @@ object TestMain {
 
   def main(args: Array[String]) {
     val pce = new PubChemExtractor()
-    val molecularFormula = pce.extractChemicalFormula("2244")
-    println(molecularFormula)
+    //val molecularFormula = pce.extractChemicalFormulaFromName("Heroin-7,8-oxide")
+    val properties = pce.extractAllProperties("Heroin-7,8-oxide")
+    println(properties)
   }
 }
